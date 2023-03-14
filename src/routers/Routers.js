@@ -6,6 +6,7 @@ import CarList from "../pages/CarList";
 import CarDetails from "../pages/CarDetails";
 import Blog from "../pages/Blog";
 import BlogDetails from "../pages/BlogDetails";
+import Services from "../pages/Services";
 import NotFound from "../pages/NotFound";
 
 const Routers = () => {
@@ -17,6 +18,7 @@ const Routers = () => {
       <Route path="/cars" element={<CarList />} />
       <Route path="/cars/:slug" element={<CarDetails />} />
       <Route path="/blogs" element={<Blog />} />
+      <Route path="/services" element={<Services />} />
       <Route path="/blogs/:slug" element={<BlogDetails />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
